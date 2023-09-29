@@ -1,10 +1,15 @@
-// Faça um programa que receba um número do usuário e continue a pedir o numero se o numero for diferente de 0.
+var prompt = require('prompt-sync')();
 
-const prompt = require('prompt-sync')();
-let numero;
+let senha;
 
 do {
-    
-    numero = prompt("Digite um numero: "); 
+    senha = prompt("Digite a senha: ")
 
-} while (numero != "0");
+    if (senha != "123") {
+        
+        console.log("Senha incorreta!");
+    }
+    
+} while (senha != "123");
+
+console.log("Senha correta!");

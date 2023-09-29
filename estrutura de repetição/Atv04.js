@@ -1,11 +1,10 @@
-//Apresente o valor do salário atual e adicione 100 até que chegue em 5000
+// Faça um programa que receba um número do usuário e continue a pedir o numero se o numero for diferente de 0.
 
-let salario = 1000
+const prompt = require('prompt-sync')();
+let numero;
 
-while (salario < 5000) {
-	salario += 100;
+do {
+    
+    numero = prompt("Digite um numero: "); 
 
-	console.log("O salário ainda é R$" + salario);
-}
-
-console.log("O salário final é R$" + salario);
+} while (numero != "0");
